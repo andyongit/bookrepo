@@ -8,7 +8,8 @@
     "test": "mocha",
     "lint": "jshint --exclude=node_modules/** **.js",
     "test:xunit": "npm run test -- --reporter xunit",
-    "watch": "nodemon index.js"
+    "watch": "nodemon index.js",
+    "smoke": "curl -I -f https://andysbooks.herokuapp.com/ "
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +24,7 @@
     "heroin": "^0.6.0",
     "heroin-js": "^1.5.0",
     "jshint": "2.9.1",
+    "lodash": "^4.0.1",
     "mocha": "2.3.4",
     "nodemon": "1.8.1",
     "supertest": "1.1.0"
